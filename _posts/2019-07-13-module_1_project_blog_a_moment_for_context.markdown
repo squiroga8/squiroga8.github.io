@@ -1,0 +1,27 @@
+---
+layout: post
+title:      "Module 1 Project Blog: A moment for context"
+date:       2019-07-13 15:20:18 +0000
+permalink:  module_1_project_blog_a_moment_for_context
+---
+
+
+While working on the Module 1 Project using the King County Housing Dataset, I experienced a recurrent, productive tension between the data on the screen in front of me and my own "common sense" or judgement (this could also be read as my own biases).  In another life, with more time to devote to this project, I would want that dual-focused tension to take on an added level - an examination of context.  If we are tasked with making sense (or making use) of data, then it's imperative our approach be one of constant triangulation between the data, our judgements, and the context of the data, be that historical, social, geographic, economic, etc. etc.  In fact, these three points are likely more intertwined then we can understand, and we need them all in order to make sense of what's in front of us. 
+
+In the King County Housing Dataset, the importance of context seemed especially salient when looking at yr_built and yr_renovated variables.  Starting with yr_built, we can see below that the trend over time between year built and mean price is not linear, and it has many spikes and dips.  This apparent messiness could be considered a goldmine in terms of how it orients us towards the importance of context, forcing us to remember that housing prices can and most certainly are affected by external factors and conditions over time.  We can see an obvious drop in mean prices after the 2008 financial crisis, as well as around 1940 (+/-5 years, WWII). 
+
+![](http://)<a href="https://imgur.com/ZYtzcf5"><img src="https://i.imgur.com/ZYtzcf5.png" title="source: imgur.com" /></a>
+
+We might also use this yr_built variable, now binned by decade below, as a context clue for thinking about the validity and availability of other variables in our dataset.  For instance, looking at the number of times a house has been viewed by decade, we might ask the question if accurate reporting on views has been constant and reliable over time.  Certainly, beginning around 1940 onwards until the final decade in our dataset, it appears that there were more home viewings, perhaps reflecting a heightened optimism around one's economic outlook during those decades.  These increased home viewings also appear to mean higher prices on average, especially in the 50s and the 90s.
+
+![](http://)<a href="https://imgur.com/rTAWto0"><img src="https://i.imgur.com/rTAWto0.png" title="source: imgur.com" /></a>
+
+When thinking about yr_renovated, the data shows us by its distribution that the year of renovation for renovated houses is left skewed, meaning most of the houses that have been renovated were renovated in the past 3 decades.  Our human judgement should kick in and lead us to ask, is this because homeowners didn't see the need or have the desire to renovate houses pre-1985?  Were renovations not reported? Was there something that incentivized renovations in the mid-1980s?
+
+![](http://)<a href="https://imgur.com/jz70urE"><img src="https://i.imgur.com/jz70urE.png" title="source: imgur.com" /></a>
+
+The above is not entirely surprising, but we should question some of the validity of the data in the sense that the apparent increase in renovations in more recent decades could be a reflection of self-reporting biases in renovation work.  For instance, if we were to do some research on changes in tax benefits and regulations over the years, perhaps we would see an increase in both the number of renovations and, as importantly, the data collected/reported on renovations.  Home-owners may have been incentivized to report renovation work in recent years if it increased the valuations of their homes or provided some kind of tax benefit.  Meaning, perhaps before such a policy change, homeowners weren't as likely to report renovation work, and consequently we aren't seeing accurate data on renovation work over the years.  If we were to keep this variable in our final model, further research on housing policy changes in King County or the state would be important.
+
+Separately, we should explore further to understand if renovation work correlates with the age of a house, as this interaction could produce mixed results in terms of the relationship with price.  For instance, if we see that renovation work is isolated to older houses, then it's possible that the age of the house acts as it's own drag on the price of the house.  yr_built and yr_renovated have an inverse correlation of 20%, possibly indicating that the older a house is the more likely that it's been renovated (or the newer a house is the less likely that it's been renovated - which makes sense!).
+
+These possible contextual dynamics should be in conversation with our data and our judgements/interpretation of the data, especially as they highlight the apparent influence of factors that are not contained within our initial dataset.  As expected, the exploratory phase with this project was certainly the most time-consuming, and the paths to go down seem infinite, especially if we're diligent about taking context into account.  Luckily, this is where we can use our best judgement, accept the limitations of the data (and time), and take a few moments to suggest (maybe in a blog) that one ought to factor in context next time around.   
