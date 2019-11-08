@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "An Intro to Hypothesis Testing"
-date:       2019-11-08 16:17:13 +0000
+date:       2019-11-08 11:17:13 -0500
 permalink:  an_intro_to_hypothesis_testing
 ---
 
@@ -85,4 +85,4 @@ Results:
 ![](https://imgur.com/HQJJ9Dk.png)
 
 
-As you can very clearly see, the F-stat produced from the ANOVA test is the same as the T-stat produced earlier.  This is because an ANOVA F-test between two categories is the same as performing a 2-tailed T-Test.  Phew!  Another minor victory :)
+As you can very clearly see, the F-stat produced from the ANOVA test is the same as the T-stat produced earlier.  This is because an ANOVA F-test between two categories is the same as performing a 2-tailed T-Test.  Phew!
