@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "Classification of Changes in Jail Incarceration Rates "
+title:      "Classification of County-level Jail Incarceration Rates "
 date:       2020-06-09 17:14:57 -0400
 permalink:  classification_of_changes_in_jail_incarceration_rates
 ---
