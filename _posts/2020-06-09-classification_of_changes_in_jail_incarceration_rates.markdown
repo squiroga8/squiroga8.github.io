@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Classification of Changes in Jail Incarceration Rates "
-date:       2020-06-09 21:14:56 +0000
+date:       2020-06-09 17:14:57 -0400
 permalink:  classification_of_changes_in_jail_incarceration_rates
 ---
 
@@ -24,14 +24,14 @@ Now that the context and motiviation are set in place, I'll turn my attention to
 The data I used in this project is thanks to the massive efforts made by the Vera Institute of Justice, compiling the first-ever county-level database on incarceration trends, and the USDA's Economic Research Service (ERS).  Here's more information on these excellent sources: 
 
 **Incarceration Rates Data:**
-* Vera Institute of Justice database of county and jurisdiction level incarceration rates from 1970 to 2017: https://github.com/vera-institute/incarceration_trends
+* [Vera Institute of Justice database of county and jurisdiction level incarceration rates](https://github.com/vera-institute/incarceration_trends) from 1970 to 2017: 
 * The Database is comprised of the following Bureau of Justice Statistics (BJS) data collections: the Census of Jails (COJ), which covers all jails and is conducted every five to eight years since 1970, and the Annual Survey of Jails (ASJ), which covers about one-third of jails-and includes nearly all of the largest jails-that has been conducted in non-census years since 1982, and the BJS National Corrections Reporting Program (NCRP) data collection. Vera merged this data to produce a first-in-kind national dataset that can examine both jail and prison incarceration at the county level.
-* "Incarceration Trends is supported by Google.org, the John D. and Catherine T. MacArthur Foundation Safety and Justice Challenge, and the Robert W. Wilson Charitable Trust." http://trends.vera.org/incarceration-rates?data=pretrial
+* "[Incarceration Trends is supported by Google.org, the John D. and Catherine T. MacArthur Foundation Safety and Justice Challenge, and the Robert W. Wilson Charitable Trust](http://trends.vera.org/incarceration-rates?data=pretrial)." 
 
 **County-level data on Population, Jobs, Education:**
-* The United States Department of Agriculture's (USDA) Economic Research Service (ERS): https://catalog.data.gov/dataset/county-level-data-sets
-* The USDA's Atlas of Rural and Small Town America:
-* "Data are grouped by topic and reported in four tabs within the spreadsheet: People, Jobs, Income, Veterans, and County Classifications. Each tab includes the County FIPS Code as the first column. The Variable Name Lookup tab allows users to connect the short name for the indicator used as the header in the spreadsheet with the more descriptive title used in the atlas." https://www.ers.usda.gov/data-products/atlas-of-rural-and-small-town-america/download-the-data/
+* The United States Department of Agriculture's (USDA) [Economic Research Service (ERS)](https://catalog.data.gov/dataset/county-level-data-sets): 
+* The USDA's [Atlas of Rural and Small Town America](https://www.ers.usda.gov/data-products/atlas-of-rural-and-small-town-america/download-the-data/):
+* "Data are grouped by topic and reported in four tabs within the spreadsheet: People, Jobs, Income, Veterans, and County Classifications. Each tab includes the County FIPS Code as the first column. The Variable Name Lookup tab allows users to connect the short name for the indicator used as the header in the spreadsheet with the more descriptive title used in the atlas." 
 
 ### Scrub
 As expected, I spent a fair amount of time in this stage of the process - cleaning the data. I started by preparing the incarceration data - taking a subset of the data focused on the years of interest (2008-2017); removing prison data to stay focused on jail data; dealing with null values through county or state-level imputations; transforming the incarceration dataframe so that each row corresponded to a unique county.  I then turned my attention to the other county-level data - cleaning, dealing with null values, and finally merging all the dataframes together.
