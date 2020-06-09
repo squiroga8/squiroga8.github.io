@@ -6,7 +6,7 @@ permalink:  classification_of_changes_in_jail_incarceration_rates
 ---
 
 
-For my capstone project at the Flatiron School's Immersive Data Science Program, I decided to use classification modeling to predict *changes in jail incarceration rates at the county level*, using 10 years of incarceration data and other county-level data on population, employment, income, and more. 
+For my [capstone project at the Flatiron School's Immersive Data Science Program](https://github.com/squiroga8/classifying-county-jail-incarceration-rates), I decided to use classification modeling to predict *changes in jail incarceration rates at the county level*, using 10 years of incarceration data and other county-level data on population, employment, income, and more. 
 
 I initially set out with several lofty, overly ambitious ideas based on a well-known hypothesis that economic opportunities (read *inequality*) have some culpability in increased criminality, to say the least.  After exploring the availability of incarceration-related data, specifically trying to assess the level of granularity possible, I took a pause to ask myself a few questions regarding my overall motivations and ethical considerations moving forward.  I realized that approaching these questions at the individual level, be that adult citizen, inmate, parolee, etc. made me deeply uncomfortable, even if I had the intention of setting out to prove that criminal behaviors and incarceration had more to do with external circumstances, even policy, than it had to do with the individual.  There is plenty to contend with when it comes to perpetuating bias in AI and data science focused on social issues, and, while still being new to the field, I needed to acknowledge the limits of my knowledge and experience in dealing with these issues.   
 
@@ -164,5 +164,7 @@ Building off this project, there are a few next steps I'd like to explore in ord
 First, I would like to introduce additional county-level data on education, businesses, and political party breakdowns and/or election data.  Second, I would perform some feature engineering, which could hopefully standardize some of the way that the data is presented (for instance percentages versus raw numbers) as well as reduce some of the dimensionality.  Third, upon modeling the data I would then seek to identify the top n features in order to make this model more appropriate for continuous monitoring and predicting.  Based on this, I would build a pipeline for updating and making the model available through a more user-friendly interface so that interested parties can search for their counties.
 
 And with that, it's time to get back to work.
+
+GitHub Repo to this project: [https://github.com/squiroga8/classifying-county-jail-incarceration-rates](https://github.com/squiroga8/classifying-county-jail-incarceration-rates)
 
 
